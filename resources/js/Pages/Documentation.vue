@@ -132,24 +132,89 @@
               <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
                 <Server :size="28" class="text-green-600" /> Step 2: Setup aaPanel
               </h2>
-              <div class="space-y-4">
+              
+              <!-- Login Instructions -->
+              <div class="space-y-6">
                 <div class="p-4 rounded-lg bg-blue-50 border border-blue-200">
-                  <p class="font-semibold text-slate-900">Login URL:</p>
-                  <p class="font-mono text-slate-700 mt-1">http://IP-SERVER:7800</p>
+                  <p class="font-semibold text-slate-900 mb-2">🔑 Step 2.1: Login ke aaPanel</p>
+                  <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                    <li>Buka browser dan akses: <code class="bg-white px-2 py-1 rounded font-mono text-sm">http://IP-SERVER:7800</code></li>
+                    <li>Login dengan username dan password yang didapat saat instalasi</li>
+                    <li>Jika lupa password, reset via SSH dengan command: <code class="bg-white px-2 py-1 rounded font-mono text-sm">bt default</code></li>
+                  </ol>
                 </div>
-                <div>
-                  <p class="font-semibold text-slate-900 mb-3">Install from App Store:</p>
-                  <ul class="space-y-2 ml-4">
-                    <li class="flex items-center gap-2 text-slate-700"><span class="text-green-600">✓</span> Nginx</li>
-                    <li class="flex items-center gap-2 text-slate-700"><span class="text-green-600">✓</span> PHP 8.3</li>
-                    <li class="flex items-center gap-2 text-slate-700"><span class="text-green-600">✓</span> MariaDB</li>
-                    <li class="flex items-center gap-2 text-slate-700"><span class="text-green-600">✓</span> phpMyAdmin</li>
-                    <li class="flex items-center gap-2 text-slate-700"><span class="text-green-600">✓</span> PureFTPd</li>
+
+                <!-- Install Software -->
+                <div class="p-4 rounded-lg bg-green-50 border border-green-200">
+                  <p class="font-semibold text-slate-900 mb-3">📦 Step 2.2: Install Software dari App Store</p>
+                  <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                    <li>Klik menu <strong>"App Store"</strong> di sidebar kiri</li>
+                    <li>Cari dan install software berikut satu per satu:</li>
+                  </ol>
+                  <ul class="space-y-2 ml-8 mt-3">
+                    <li class="flex items-center gap-2 text-slate-700">
+                      <span class="text-green-600">✓</span> 
+                      <strong>Nginx</strong> - Web server (pilih versi terbaru)
+                    </li>
+                    <li class="flex items-center gap-2 text-slate-700">
+                      <span class="text-green-600">✓</span> 
+                      <strong>PHP 8.3</strong> - Pilih versi 8.3 untuk compatibility
+                    </li>
+                    <li class="flex items-center gap-2 text-slate-700">
+                      <span class="text-green-600">✓</span> 
+                      <strong>MariaDB</strong> - Database server (versi 10.6+)
+                    </li>
+                    <li class="flex items-center gap-2 text-slate-700">
+                      <span class="text-green-600">✓</span> 
+                      <strong>phpMyAdmin</strong> - Database management tool
+                    </li>
+                    <li class="flex items-center gap-2 text-slate-700">
+                      <span class="text-green-600">✓</span> 
+                      <strong>PureFTPd</strong> - FTP server (optional)
+                    </li>
                   </ul>
+                  <p class="text-sm text-slate-600 mt-3 ml-2">💡 <em>Tip: Tunggu hingga setiap software selesai terinstall sebelum install yang lain</em></p>
                 </div>
-                <div>
-                  <p class="font-semibold text-slate-900 mb-2">Open Firewall Ports:</p>
-                  <p class="font-mono text-slate-700 bg-slate-50 p-3 rounded">80, 443, 22, 3306, 19066, 19067</p>
+
+                <!-- Firewall Configuration -->
+                <div class="p-4 rounded-lg bg-orange-50 border border-orange-200">
+                  <p class="font-semibold text-slate-900 mb-3">🔥 Step 2.3: Konfigurasi Firewall</p>
+                  <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                    <li>Klik menu <strong>"Security"</strong> di sidebar</li>
+                    <li>Pada tab <strong>"Firewall"</strong>, pastikan port berikut terbuka:</li>
+                  </ol>
+                  <div class="mt-3 ml-2">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-2">
+                      <span class="bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm"><strong>80</strong> - HTTP</span>
+                      <span class="bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm"><strong>443</strong> - HTTPS</span>
+                      <span class="bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm"><strong>22</strong> - SSH</span>
+                      <span class="bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm"><strong>3306</strong> - MySQL</span>
+                      <span class="bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm"><strong>19066</strong> - Panel Port</span>
+                      <span class="bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm"><strong>19067</strong> - FTP</span>
+                    </div>
+                  </div>
+                  <ol start="3" class="list-decimal list-inside space-y-2 text-slate-700 ml-2 mt-3">
+                    <li>Klik <strong>"Release"</strong> untuk setiap port yang belum terbuka</li>
+                    <li>Jangan lupa juga buka port di firewall VPS provider (Cloudflare, AWS, dll)</li>
+                  </ol>
+                </div>
+
+                <!-- Create Database -->
+                <div class="p-4 rounded-lg bg-purple-50 border border-purple-200">
+                  <p class="font-semibold text-slate-900 mb-3">💾 Step 2.4: Buat Database untuk Laravel</p>
+                  <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                    <li>Klik menu <strong>"Database"</strong> di sidebar</li>
+                    <li>Klik tombol <strong>"Add database"</strong></li>
+                    <li>Isi form:
+                      <ul class="ml-6 mt-2 space-y-1">
+                        <li>• Database name: <code class="bg-white px-2 py-1 rounded text-sm">laravel_db</code></li>
+                        <li>• Username: <code class="bg-white px-2 py-1 rounded text-sm">laravel_user</code></li>
+                        <li>• Password: (generate password yang kuat)</li>
+                      </ul>
+                    </li>
+                    <li>Klik <strong>"Submit"</strong></li>
+                    <li>Ulangi untuk database Sales App dengan nama berbeda</li>
+                  </ol>
                 </div>
               </div>
             </div>
@@ -159,13 +224,40 @@
           <section id="step3">
             <div class="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
               <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <Palette :size="28" class="text-purple-600" /> Step 3: Deploy Laravel + React
+                <Palette :size="28" class="text-purple-600" /> Step 3: Deploy Laravel + React (Inertia)
               </h2>
+
+              <!-- Create Website in aaPanel -->
+              <div class="mb-6 p-4 rounded-lg bg-blue-50 border border-blue-200">
+                <p class="font-semibold text-slate-900 mb-3">🌐 Step 3.1: Buat Website di aaPanel</p>
+                <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                  <li>Klik menu <strong>"Website"</strong> di sidebar aaPanel</li>
+                  <li>Klik tombol <strong>"Add site"</strong></li>
+                  <li>Isi form:
+                    <ul class="ml-6 mt-2 space-y-1">
+                      <li>• Domain: <code class="bg-white px-2 py-1 rounded text-sm">pullstack.cloud</code></li>
+                      <li>• Root directory: <code class="bg-white px-2 py-1 rounded text-sm">/www/wwwroot/laravel-inertia</code></li>
+                      <li>• PHP Version: <code class="bg-white px-2 py-1 rounded text-sm">PHP-83</code></li>
+                      <li>• Database: Pilih database yang sudah dibuat</li>
+                    </ul>
+                  </li>
+                  <li>Klik <strong>"Submit"</strong></li>
+                </ol>
+              </div>
+
+              <!-- Upload Code -->
+              <div class="mb-6 p-4 rounded-lg bg-green-50 border border-green-200">
+                <p class="font-semibold text-slate-900 mb-3">💻 Step 3.2: Upload & Setup Laravel Code</p>
+                <p class="text-slate-700 mb-3 ml-2">Login ke VPS via SSH dan jalankan commands berikut:</p>
+              </div>
+              
               <div class="mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200">
-                <p class="text-sm font-semibold text-slate-600">📁 Location:</p>
+                <p class="text-sm font-semibold text-slate-600 flex items-center gap-2">
+                  <Folder :size="16" class="text-slate-600" /> Lokasi Project:
+                </p>
                 <p class="font-mono text-slate-900 mt-1">/www/wwwroot/laravel-inertia</p>
               </div>
-              <div class="space-y-2">
+              <div class="space-y-2 mb-6">
                 <CommandBox cmd="cd /www/wwwroot/laravel-inertia" />
                 <CommandBox cmd="composer install" />
                 <CommandBox cmd="cp .env.example .env" />
@@ -176,6 +268,71 @@
                 <CommandBox cmd="chown -R www:www storage bootstrap/cache" />
                 <CommandBox cmd="chmod -R 775 storage bootstrap/cache" />
               </div>
+
+              <!-- Configure .env -->
+              <div class="mb-6 p-4 rounded-lg bg-yellow-50 border border-yellow-200">
+                <p class="font-semibold text-slate-900 mb-3">⚙️ Step 3.3: Konfigurasi File .env</p>
+                <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                  <li>Edit file <code class="bg-white px-2 py-1 rounded text-sm">.env</code> dengan nano atau vim</li>
+                  <li>Update konfigurasi database:
+                    <div class="bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs mt-2">
+                      <div>DB_CONNECTION=mysql</div>
+                      <div>DB_HOST=127.0.0.1</div>
+                      <div>DB_PORT=3306</div>
+                      <div>DB_DATABASE=laravel_db</div>
+                      <div>DB_USERNAME=laravel_user</div>
+                      <div>DB_PASSWORD=your_password</div>
+                    </div>
+                  </li>
+                  <li>Update APP_URL sesuai domain Anda</li>
+                  <li>Save file (Ctrl+X, Y, Enter)</li>
+                </ol>
+              </div>
+
+              <!-- SSL Setup -->
+              <div class="mb-6 p-4 rounded-lg bg-purple-50 border border-purple-200">
+                <p class="font-semibold text-slate-900 mb-3">🔒 Step 3.4: Setup SSL Certificate</p>
+                <ol class="list-decimal list-inside space-y-2 text-slate-700 ml-2">
+                  <li>Di aaPanel, buka halaman <strong>"Website"</strong></li>
+                  <li>Klik domain <strong>pullstack.cloud</strong></li>
+                  <li>Pilih tab <strong>"SSL"</strong></li>
+                  <li>Pilih <strong>"Let's Encrypt"</strong></li>
+                  <li>Centang domain dan www domain</li>
+                  <li>Klik <strong>"Apply"</strong> dan tunggu proses selesai</li>
+                  <li>Enable <strong>"Force HTTPS"</strong></li>
+                </ol>
+              </div>
+
+              <!-- Nginx Config -->
+              <div class="mt-6">
+                <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                  <Server :size="20" class="text-purple-600" /> Nginx Config (pullstack.cloud)
+                </h3>
+                <div class="bg-slate-900 text-slate-100 p-4 rounded-lg font-mono text-xs overflow-x-auto">
+                  <pre class="text-slate-100">server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name pullstack.cloud;
+    root /www/wwwroot/laravel-inertia/public;
+    index index.php index.html;
+
+    ssl_certificate     /www/server/panel/vhost/cert/pullstack.cloud/fullchain.pem;
+    ssl_certificate_key /www/server/panel/vhost/cert/pullstack.cloud/privkey.pem;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include enable-php-83.conf;
+        fastcgi_param PHP_ADMIN_VALUE "open_basedir=/www/wwwroot/laravel-inertia/:/tmp/";
+    }
+
+    access_log /www/wwwlogs/pullstack.cloud.access.log;
+    error_log /www/wwwlogs/pullstack.cloud.error.log;
+}</pre>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -183,17 +340,52 @@
           <section id="step4">
             <div class="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
               <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <Briefcase :size="28" class="text-indigo-600" /> Step 4: Deploy Sales App
+                <Briefcase :size="28" class="text-indigo-600" /> Step 4: Deploy Sales Management App (Inertia React)
               </h2>
               <div class="mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200">
-                <p class="text-sm font-semibold text-slate-600">📁 Location:</p>
+                <p class="text-sm font-semibold text-slate-600">📁 Lokasi Project:</p>
                 <p class="font-mono text-slate-900 mt-1">/www/wwwroot/sales-management-app</p>
               </div>
-              <div class="space-y-2">
+              <div class="space-y-2 mb-6">
                 <CommandBox cmd="cd /www/wwwroot/sales-management-app" />
-                <CommandBox cmd="composer install && npm install" />
-                <CommandBox cmd="cp .env.example .env && php artisan key:generate" />
-                <CommandBox cmd="npm run build && php artisan migrate --seed" />
+                <CommandBox cmd="composer install" />
+                <CommandBox cmd="cp .env.example .env" />
+                <CommandBox cmd="php artisan key:generate" />
+                <CommandBox cmd="npm install" />
+                <CommandBox cmd="npm run build" />
+                <CommandBox cmd="php artisan migrate --seed" />
+              </div>
+
+              <!-- Nginx Config -->
+              <div class="mt-6">
+                <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                  <Server :size="20" class="text-indigo-600" /> Nginx Config (app.pullstack.cloud)
+                </h3>
+                <div class="bg-slate-900 text-slate-100 p-4 rounded-lg font-mono text-xs overflow-x-auto">
+                  <pre class="text-slate-100">server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name app.pullstack.cloud;
+
+    root /www/wwwroot/sales-management-app/public;
+    index index.php index.html;
+
+    ssl_certificate     /www/server/panel/vhost/cert/app.pullstack.cloud/fullchain.pem;
+    ssl_certificate_key /www/server/panel/vhost/cert/app.pullstack.cloud/privkey.pem;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include enable-php-83.conf;
+        fastcgi_param PHP_ADMIN_VALUE "open_basedir=/www/wwwroot/sales-management-app/:/tmp/";
+    }
+
+    access_log /www/wwwlogs/app.pullstack.cloud.access.log;
+    error_log  /www/wwwlogs/app.pullstack.cloud.error.log;
+}</pre>
+                </div>
               </div>
             </div>
           </section>
@@ -209,22 +401,105 @@
                   <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
                     <Activity :size="20" class="text-blue-600" /> Grafana (Port 3000)
                   </h3>
-                  <CommandBox cmd="docker run -d --name grafana -p 3000:3000 -v grafana-storage:/var/lib/grafana grafana/grafana:latest" />
-                  <CommandBox cmd="docker update --restart always grafana" />
+                  <div class="space-y-2 mb-4">
+                    <CommandBox cmd="docker run -d --name grafana -p 3000:3000 -v grafana-storage:/var/lib/grafana grafana/grafana:latest" />
+                    <CommandBox cmd="docker update --restart always grafana" />
+                  </div>
+                  
+                  <!-- Nginx Config for Grafana -->
+                  <div class="mt-4">
+                    <p class="text-sm font-semibold text-slate-900 mb-2">Nginx Config (grafana.pullstack.cloud):</p>
+                    <div class="bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs overflow-x-auto">
+                      <pre class="text-slate-100">server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name grafana.pullstack.cloud;
+
+    ssl_certificate     /www/server/panel/vhost/cert/grafana.pullstack.cloud/fullchain.pem;
+    ssl_certificate_key /www/server/panel/vhost/cert/grafana.pullstack.cloud/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+}</pre>
+                    </div>
+                  </div>
                 </div>
                 <div class="border-l-4 border-orange-500 pl-6 py-4">
                   <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
-                    <GitBranch :size="20" class="text-orange-600" /> n8n (Port 5678)
+                    <GitBranch :size="20" class="text-orange-600" /> n8n Automation (Port 5678)
                   </h3>
-                  <CommandBox cmd="docker run -itd --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n -e WEBHOOK_URL=https://n8n.pullstack.cloud n8nio/n8n" />
-                  <CommandBox cmd="docker update --restart always n8n" />
+                  <div class="space-y-2 mb-4">
+                    <CommandBox cmd="docker run -itd --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n -e WEBHOOK_URL=https://n8n.pullstack.cloud n8nio/n8n" />
+                    <CommandBox cmd="docker update --restart always n8n" />
+                  </div>
+                  
+                  <!-- Nginx Config for n8n -->
+                  <div class="mt-4">
+                    <p class="text-sm font-semibold text-slate-900 mb-2">Nginx Config (n8n.pullstack.cloud):</p>
+                    <div class="bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs overflow-x-auto">
+                      <pre class="text-slate-100">server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name n8n.pullstack.cloud;
+
+    ssl_certificate     /www/server/panel/vhost/cert/n8n.pullstack.cloud/fullchain.pem;
+    ssl_certificate_key /www/server/panel/vhost/cert/n8n.pullstack.cloud/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:5678;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+}</pre>
+                    </div>
+                  </div>
                 </div>
                 <div class="border-l-4 border-green-500 pl-6 py-4">
                   <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
-                    <Settings :size="20" class="text-green-600" /> Jenkins (Port 8080)
+                    <Settings :size="20" class="text-green-600" /> Jenkins CI/CD (Port 14808)
                   </h3>
-                  <CommandBox cmd="docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts" />
-                  <CommandBox cmd="docker update --restart always jenkins" />
+                  <div class="space-y-2 mb-4">
+                    <CommandBox cmd="docker run -d --name jenkins -p 14808:14808 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts" />
+                    <CommandBox cmd="docker update --restart always jenkins" />
+                  </div>
+                  
+                  <!-- Nginx Config for Jenkins -->
+                  <div class="mt-4">
+                    <p class="text-sm font-semibold text-slate-900 mb-2">Nginx Config (jenkins.pullstack.cloud):</p>
+                    <div class="bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs overflow-x-auto">
+                      <pre class="text-slate-100">server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name jenkins.pullstack.cloud;
+
+    ssl_certificate     /www/server/panel/vhost/cert/jenkins.pullstack.cloud/fullchain.pem;
+    ssl_certificate_key /www/server/panel/vhost/cert/jenkins.pullstack.cloud/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:14808;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+
+    location ~ ^/ws/(.*) {
+        proxy_pass http://127.0.0.1:14808;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+}</pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

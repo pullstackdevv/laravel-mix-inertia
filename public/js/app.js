@@ -30639,22 +30639,22 @@ var _hoisted_32 = {
   "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
 };
 var _hoisted_33 = {
-  "class": "space-y-2"
+  "class": "mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200"
 };
 var _hoisted_34 = {
-  id: "step4"
+  "class": "text-sm font-semibold text-slate-600 flex items-center gap-2"
 };
 var _hoisted_35 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  "class": "space-y-2 mb-6"
 };
 var _hoisted_36 = {
-  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+  "class": "mt-6"
 };
 var _hoisted_37 = {
-  "class": "space-y-2"
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
 };
 var _hoisted_38 = {
-  id: "step5"
+  id: "step4"
 };
 var _hoisted_39 = {
   "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
@@ -30663,61 +30663,89 @@ var _hoisted_40 = {
   "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
 };
 var _hoisted_41 = {
-  "class": "space-y-6"
+  "class": "space-y-2 mb-6"
 };
 var _hoisted_42 = {
-  "class": "border-l-4 border-blue-500 pl-6 py-4"
+  "class": "mt-6"
 };
 var _hoisted_43 = {
   "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
 };
 var _hoisted_44 = {
-  "class": "border-l-4 border-orange-500 pl-6 py-4"
+  id: "step5"
 };
 var _hoisted_45 = {
-  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
 };
 var _hoisted_46 = {
-  "class": "border-l-4 border-green-500 pl-6 py-4"
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
 };
 var _hoisted_47 = {
-  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
+  "class": "space-y-6"
 };
 var _hoisted_48 = {
-  id: "step6"
+  "class": "border-l-4 border-blue-500 pl-6 py-4"
 };
 var _hoisted_49 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
 };
 var _hoisted_50 = {
-  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+  "class": "space-y-2 mb-4"
 };
 var _hoisted_51 = {
-  id: "step7"
+  "class": "border-l-4 border-orange-500 pl-6 py-4"
 };
 var _hoisted_52 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
 };
 var _hoisted_53 = {
-  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+  "class": "space-y-2 mb-4"
 };
 var _hoisted_54 = {
-  "class": "space-y-2"
+  "class": "border-l-4 border-green-500 pl-6 py-4"
 };
 var _hoisted_55 = {
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
+};
+var _hoisted_56 = {
+  "class": "space-y-2 mb-4"
+};
+var _hoisted_57 = {
+  id: "step6"
+};
+var _hoisted_58 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_59 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_60 = {
+  id: "step7"
+};
+var _hoisted_61 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_62 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_63 = {
+  "class": "space-y-2"
+};
+var _hoisted_64 = {
   id: "access",
   "class": "pb-12"
 };
-var _hoisted_56 = {
+var _hoisted_65 = {
   "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
 };
-var _hoisted_57 = {
+var _hoisted_66 = {
   "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
 };
-var _hoisted_58 = {
+var _hoisted_67 = {
   "class": "grid grid-cols-1 md:grid-cols-2 gap-4"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Folder = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Folder");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
     href: "/",
     "class": "flex items-center gap-3 hover:opacity-80 transition"
@@ -30731,7 +30759,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }, "VPS Deployment Docs", -1 /* CACHED */))];
     }),
     _: 1 /* STABLE */
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar Navigation "), _cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<aside class=\"lg:col-span-1\" data-v-40d676e1><div class=\"sticky top-24 space-y-2 bg-white rounded-lg p-4 border border-slate-200 shadow-sm\" data-v-40d676e1><h3 class=\"text-sm font-semibold text-slate-900 uppercase tracking-wide px-3 py-2\" data-v-40d676e1>Contents</h3><nav class=\"space-y-1\" data-v-40d676e1><a href=\"#overview\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Overview</a><a href=\"#requirements\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Requirements</a><a href=\"#step1\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 1: System</a><a href=\"#step2\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 2: aaPanel</a><a href=\"#step3\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 3: Laravel</a><a href=\"#step4\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 4: Sales App</a><a href=\"#step5\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 5: Docker</a><a href=\"#step6\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 6: DNS</a><a href=\"#step7\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 7: Final</a><a href=\"#access\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Access</a></nav></div></aside>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Overview "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Rocket"], {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar Navigation "), _cache[38] || (_cache[38] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<aside class=\"lg:col-span-1\" data-v-40d676e1><div class=\"sticky top-24 space-y-2 bg-white rounded-lg p-4 border border-slate-200 shadow-sm\" data-v-40d676e1><h3 class=\"text-sm font-semibold text-slate-900 uppercase tracking-wide px-3 py-2\" data-v-40d676e1>Contents</h3><nav class=\"space-y-1\" data-v-40d676e1><a href=\"#overview\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Overview</a><a href=\"#requirements\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Requirements</a><a href=\"#step1\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 1: System</a><a href=\"#step2\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 2: aaPanel</a><a href=\"#step3\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 3: Laravel</a><a href=\"#step4\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 4: Sales App</a><a href=\"#step5\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 5: Docker</a><a href=\"#step6\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 6: DNS</a><a href=\"#step7\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 7: Final</a><a href=\"#access\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Access</a></nav></div></aside>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Overview "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Rocket"], {
     size: 32,
     "class": "text-blue-600"
   }), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" VPS Deployment Setup ", -1 /* CACHED */))]), _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"text-lg text-slate-600 leading-relaxed\" data-v-40d676e1> Dokumentasi lengkap untuk setup server <strong data-v-40d676e1>VPS Ubuntu 22.04</strong> menggunakan <strong data-v-40d676e1>aaPanel</strong> dengan deployment aplikasi berbasis <strong data-v-40d676e1>Laravel + React (Inertia)</strong>, serta beberapa service berbasis Docker: <strong data-v-40d676e1>Jenkins</strong>, <strong data-v-40d676e1>Grafana</strong>, dan <strong data-v-40d676e1>n8n</strong>. </p>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Requirements "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
@@ -30804,16 +30832,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 2 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Server"], {
     size: 28,
     "class": "text-green-600"
-  }), _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 2: Setup aaPanel ", -1 /* CACHED */))]), _cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"space-y-4\" data-v-40d676e1><div class=\"p-4 rounded-lg bg-blue-50 border border-blue-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>Login URL:</p><p class=\"font-mono text-slate-700 mt-1\" data-v-40d676e1>http://IP-SERVER:7800</p></div><div data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>Install from App Store:</p><ul class=\"space-y-2 ml-4\" data-v-40d676e1><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> Nginx</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> PHP 8.3</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> MariaDB</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> phpMyAdmin</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> PureFTPd</li></ul></div><div data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-2\" data-v-40d676e1>Open Firewall Ports:</p><p class=\"font-mono text-slate-700 bg-slate-50 p-3 rounded\" data-v-40d676e1>80, 443, 22, 3306, 19066, 19067</p></div></div>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 3 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Palette"], {
+  }), _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 2: Setup aaPanel ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Login Instructions "), _cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"space-y-6\" data-v-40d676e1><div class=\"p-4 rounded-lg bg-blue-50 border border-blue-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-2\" data-v-40d676e1>🔑 Step 2.1: Login ke aaPanel</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Buka browser dan akses: <code class=\"bg-white px-2 py-1 rounded font-mono text-sm\" data-v-40d676e1>http://IP-SERVER:7800</code></li><li data-v-40d676e1>Login dengan username dan password yang didapat saat instalasi</li><li data-v-40d676e1>Jika lupa password, reset via SSH dengan command: <code class=\"bg-white px-2 py-1 rounded font-mono text-sm\" data-v-40d676e1>bt default</code></li></ol></div><!-- Install Software --><div class=\"p-4 rounded-lg bg-green-50 border border-green-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>📦 Step 2.2: Install Software dari App Store</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Klik menu <strong data-v-40d676e1>&quot;App Store&quot;</strong> di sidebar kiri</li><li data-v-40d676e1>Cari dan install software berikut satu per satu:</li></ol><ul class=\"space-y-2 ml-8 mt-3\" data-v-40d676e1><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span><strong data-v-40d676e1>Nginx</strong> - Web server (pilih versi terbaru) </li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span><strong data-v-40d676e1>PHP 8.3</strong> - Pilih versi 8.3 untuk compatibility </li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span><strong data-v-40d676e1>MariaDB</strong> - Database server (versi 10.6+) </li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span><strong data-v-40d676e1>phpMyAdmin</strong> - Database management tool </li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span><strong data-v-40d676e1>PureFTPd</strong> - FTP server (optional) </li></ul><p class=\"text-sm text-slate-600 mt-3 ml-2\" data-v-40d676e1>💡 <em data-v-40d676e1>Tip: Tunggu hingga setiap software selesai terinstall sebelum install yang lain</em></p></div><!-- Firewall Configuration --><div class=\"p-4 rounded-lg bg-orange-50 border border-orange-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>🔥 Step 2.3: Konfigurasi Firewall</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Klik menu <strong data-v-40d676e1>&quot;Security&quot;</strong> di sidebar</li><li data-v-40d676e1>Pada tab <strong data-v-40d676e1>&quot;Firewall&quot;</strong>, pastikan port berikut terbuka:</li></ol><div class=\"mt-3 ml-2\" data-v-40d676e1><div class=\"grid grid-cols-2 md:grid-cols-3 gap-2 mt-2\" data-v-40d676e1><span class=\"bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm\" data-v-40d676e1><strong data-v-40d676e1>80</strong> - HTTP</span><span class=\"bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm\" data-v-40d676e1><strong data-v-40d676e1>443</strong> - HTTPS</span><span class=\"bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm\" data-v-40d676e1><strong data-v-40d676e1>22</strong> - SSH</span><span class=\"bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm\" data-v-40d676e1><strong data-v-40d676e1>3306</strong> - MySQL</span><span class=\"bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm\" data-v-40d676e1><strong data-v-40d676e1>19066</strong> - Panel Port</span><span class=\"bg-white px-3 py-2 rounded border border-orange-300 text-center font-mono text-sm\" data-v-40d676e1><strong data-v-40d676e1>19067</strong> - FTP</span></div></div><ol start=\"3\" class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2 mt-3\" data-v-40d676e1><li data-v-40d676e1>Klik <strong data-v-40d676e1>&quot;Release&quot;</strong> untuk setiap port yang belum terbuka</li><li data-v-40d676e1>Jangan lupa juga buka port di firewall VPS provider (Cloudflare, AWS, dll)</li></ol></div><!-- Create Database --><div class=\"p-4 rounded-lg bg-purple-50 border border-purple-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>💾 Step 2.4: Buat Database untuk Laravel</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Klik menu <strong data-v-40d676e1>&quot;Database&quot;</strong> di sidebar</li><li data-v-40d676e1>Klik tombol <strong data-v-40d676e1>&quot;Add database&quot;</strong></li><li data-v-40d676e1>Isi form: <ul class=\"ml-6 mt-2 space-y-1\" data-v-40d676e1><li data-v-40d676e1>• Database name: <code class=\"bg-white px-2 py-1 rounded text-sm\" data-v-40d676e1>laravel_db</code></li><li data-v-40d676e1>• Username: <code class=\"bg-white px-2 py-1 rounded text-sm\" data-v-40d676e1>laravel_user</code></li><li data-v-40d676e1>• Password: (generate password yang kuat)</li></ul></li><li data-v-40d676e1>Klik <strong data-v-40d676e1>&quot;Submit&quot;</strong></li><li data-v-40d676e1>Ulangi untuk database Sales App dengan nama berbeda</li></ol></div></div>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 3 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Palette"], {
     size: 28,
     "class": "text-purple-600"
-  }), _cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 3: Deploy Laravel + React ", -1 /* CACHED */))]), _cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200"
+  }), _cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 3: Deploy Laravel + React (Inertia) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Create Website in aaPanel "), _cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"mb-6 p-4 rounded-lg bg-blue-50 border border-blue-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>🌐 Step 3.1: Buat Website di aaPanel</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Klik menu <strong data-v-40d676e1>&quot;Website&quot;</strong> di sidebar aaPanel</li><li data-v-40d676e1>Klik tombol <strong data-v-40d676e1>&quot;Add site&quot;</strong></li><li data-v-40d676e1>Isi form: <ul class=\"ml-6 mt-2 space-y-1\" data-v-40d676e1><li data-v-40d676e1>• Domain: <code class=\"bg-white px-2 py-1 rounded text-sm\" data-v-40d676e1>pullstack.cloud</code></li><li data-v-40d676e1>• Root directory: <code class=\"bg-white px-2 py-1 rounded text-sm\" data-v-40d676e1>/www/wwwroot/laravel-inertia</code></li><li data-v-40d676e1>• PHP Version: <code class=\"bg-white px-2 py-1 rounded text-sm\" data-v-40d676e1>PHP-83</code></li><li data-v-40d676e1>• Database: Pilih database yang sudah dibuat</li></ul></li><li data-v-40d676e1>Klik <strong data-v-40d676e1>&quot;Submit&quot;</strong></li></ol></div>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Code "), _cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "mb-6 p-4 rounded-lg bg-green-50 border border-green-200"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-    "class": "text-sm font-semibold text-slate-600"
-  }, "📁 Location:"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900 mb-3"
+  }, "💻 Step 3.2: Upload & Setup Laravel Code"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-700 mb-3 ml-2"
+  }, "Login ke VPS via SSH dan jalankan commands berikut:")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Folder, {
+    size: 16,
+    "class": "text-slate-600"
+  }), _cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Lokasi Project: ", -1 /* CACHED */))]), _cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "font-mono text-slate-900 mt-1"
-  }, "/www/wwwroot/laravel-inertia")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }, "/www/wwwroot/laravel-inertia", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "cd /www/wwwroot/laravel-inertia"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "composer install"
@@ -30831,54 +30864,98 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     cmd: "chown -R www:www storage bootstrap/cache"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "chmod -R 775 storage bootstrap/cache"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 4 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Briefcase"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Configure .env "), _cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"mb-6 p-4 rounded-lg bg-yellow-50 border border-yellow-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>⚙️ Step 3.3: Konfigurasi File .env</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Edit file <code class=\"bg-white px-2 py-1 rounded text-sm\" data-v-40d676e1>.env</code> dengan nano atau vim</li><li data-v-40d676e1>Update konfigurasi database: <div class=\"bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs mt-2\" data-v-40d676e1><div data-v-40d676e1>DB_CONNECTION=mysql</div><div data-v-40d676e1>DB_HOST=127.0.0.1</div><div data-v-40d676e1>DB_PORT=3306</div><div data-v-40d676e1>DB_DATABASE=laravel_db</div><div data-v-40d676e1>DB_USERNAME=laravel_user</div><div data-v-40d676e1>DB_PASSWORD=your_password</div></div></li><li data-v-40d676e1>Update APP_URL sesuai domain Anda</li><li data-v-40d676e1>Save file (Ctrl+X, Y, Enter)</li></ol></div>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" SSL Setup "), _cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"mb-6 p-4 rounded-lg bg-purple-50 border border-purple-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>🔒 Step 3.4: Setup SSL Certificate</p><ol class=\"list-decimal list-inside space-y-2 text-slate-700 ml-2\" data-v-40d676e1><li data-v-40d676e1>Di aaPanel, buka halaman <strong data-v-40d676e1>&quot;Website&quot;</strong></li><li data-v-40d676e1>Klik domain <strong data-v-40d676e1>pullstack.cloud</strong></li><li data-v-40d676e1>Pilih tab <strong data-v-40d676e1>&quot;SSL&quot;</strong></li><li data-v-40d676e1>Pilih <strong data-v-40d676e1>&quot;Let&#39;s Encrypt&quot;</strong></li><li data-v-40d676e1>Centang domain dan www domain</li><li data-v-40d676e1>Klik <strong data-v-40d676e1>&quot;Apply&quot;</strong> dan tunggu proses selesai</li><li data-v-40d676e1>Enable <strong data-v-40d676e1>&quot;Force HTTPS&quot;</strong></li></ol></div>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Nginx Config "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Server"], {
+    size: 20,
+    "class": "text-purple-600"
+  }), _cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Nginx Config (pullstack.cloud) ", -1 /* CACHED */))]), _cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "bg-slate-900 text-slate-100 p-4 rounded-lg font-mono text-xs overflow-x-auto"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", {
+    "class": "text-slate-100"
+  }, "server {\n    listen 80;\n    listen 443 ssl http2;\n    server_name pullstack.cloud;\n    root /www/wwwroot/laravel-inertia/public;\n    index index.php index.html;\n\n    ssl_certificate     /www/server/panel/vhost/cert/pullstack.cloud/fullchain.pem;\n    ssl_certificate_key /www/server/panel/vhost/cert/pullstack.cloud/privkey.pem;\n\n    location / {\n        try_files $uri $uri/ /index.php?$query_string;\n    }\n\n    location ~ \\.php$ {\n        include enable-php-83.conf;\n        fastcgi_param PHP_ADMIN_VALUE \"open_basedir=/www/wwwroot/laravel-inertia/:/tmp/\";\n    }\n\n    access_log /www/wwwlogs/pullstack.cloud.access.log;\n    error_log /www/wwwlogs/pullstack.cloud.error.log;\n}")], -1 /* CACHED */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 4 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Briefcase"], {
     size: 28,
     "class": "text-indigo-600"
-  }), _cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 4: Deploy Sales App ", -1 /* CACHED */))]), _cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }), _cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 4: Deploy Sales Management App (Inertia React) ", -1 /* CACHED */))]), _cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-sm font-semibold text-slate-600"
-  }, "📁 Location:"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  }, "📁 Lokasi Project:"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "font-mono text-slate-900 mt-1"
-  }, "/www/wwwroot/sales-management-app")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }, "/www/wwwroot/sales-management-app")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "cd /www/wwwroot/sales-management-app"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
-    cmd: "composer install && npm install"
+    cmd: "composer install"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
-    cmd: "cp .env.example .env && php artisan key:generate"
+    cmd: "cp .env.example .env"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
-    cmd: "npm run build && php artisan migrate --seed"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 5 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Container"], {
+    cmd: "php artisan key:generate"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+    cmd: "npm install"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+    cmd: "npm run build"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+    cmd: "php artisan migrate --seed"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Nginx Config "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Server"], {
+    size: 20,
+    "class": "text-indigo-600"
+  }), _cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Nginx Config (app.pullstack.cloud) ", -1 /* CACHED */))]), _cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "bg-slate-900 text-slate-100 p-4 rounded-lg font-mono text-xs overflow-x-auto"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", {
+    "class": "text-slate-100"
+  }, "server {\n    listen 80;\n    listen 443 ssl http2;\n    server_name app.pullstack.cloud;\n\n    root /www/wwwroot/sales-management-app/public;\n    index index.php index.html;\n\n    ssl_certificate     /www/server/panel/vhost/cert/app.pullstack.cloud/fullchain.pem;\n    ssl_certificate_key /www/server/panel/vhost/cert/app.pullstack.cloud/privkey.pem;\n\n    location / {\n        try_files $uri $uri/ /index.php?$query_string;\n    }\n\n    location ~ \\.php$ {\n        include enable-php-83.conf;\n        fastcgi_param PHP_ADMIN_VALUE \"open_basedir=/www/wwwroot/sales-management-app/:/tmp/\";\n    }\n\n    access_log /www/wwwlogs/app.pullstack.cloud.access.log;\n    error_log  /www/wwwlogs/app.pullstack.cloud.error.log;\n}")], -1 /* CACHED */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 5 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Container"], {
     size: 28,
     "class": "text-cyan-600"
-  }), _cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 5: Docker Services ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Activity"], {
+  }), _cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 5: Docker Services ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Activity"], {
     size: 20,
     "class": "text-blue-600"
-  }), _cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Grafana (Port 3000) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }), _cache[28] || (_cache[28] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Grafana (Port 3000) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker run -d --name grafana -p 3000:3000 -v grafana-storage:/var/lib/grafana grafana/grafana:latest"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker update --restart always grafana"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["GitBranch"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Nginx Config for Grafana "), _cache[29] || (_cache[29] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "mt-4"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm font-semibold text-slate-900 mb-2"
+  }, "Nginx Config (grafana.pullstack.cloud):"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs overflow-x-auto"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", {
+    "class": "text-slate-100"
+  }, "server {\n    listen 80;\n    listen 443 ssl http2;\n    server_name grafana.pullstack.cloud;\n\n    ssl_certificate     /www/server/panel/vhost/cert/grafana.pullstack.cloud/fullchain.pem;\n    ssl_certificate_key /www/server/panel/vhost/cert/grafana.pullstack.cloud/privkey.pem;\n\n    location / {\n        proxy_pass http://127.0.0.1:3000;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto https;\n    }\n}")])], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_51, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["GitBranch"], {
     size: 20,
     "class": "text-orange-600"
-  }), _cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" n8n (Port 5678) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }), _cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" n8n Automation (Port 5678) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_53, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker run -itd --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n -e WEBHOOK_URL=https://n8n.pullstack.cloud n8nio/n8n"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker update --restart always n8n"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Nginx Config for n8n "), _cache[31] || (_cache[31] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "mt-4"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm font-semibold text-slate-900 mb-2"
+  }, "Nginx Config (n8n.pullstack.cloud):"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs overflow-x-auto"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", {
+    "class": "text-slate-100"
+  }, "server {\n    listen 80;\n    listen 443 ssl http2;\n    server_name n8n.pullstack.cloud;\n\n    ssl_certificate     /www/server/panel/vhost/cert/n8n.pullstack.cloud/fullchain.pem;\n    ssl_certificate_key /www/server/panel/vhost/cert/n8n.pullstack.cloud/privkey.pem;\n\n    location / {\n        proxy_pass http://127.0.0.1:5678;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto https;\n    }\n}")])], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_54, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_55, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
     size: 20,
     "class": "text-green-600"
-  }), _cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Jenkins (Port 8080) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
-    cmd: "docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts"
+  }), _cache[32] || (_cache[32] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Jenkins CI/CD (Port 14808) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+    cmd: "docker run -d --name jenkins -p 14808:14808 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker update --restart always jenkins"
-  })])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 6 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Globe"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Nginx Config for Jenkins "), _cache[33] || (_cache[33] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "mt-4"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm font-semibold text-slate-900 mb-2"
+  }, "Nginx Config (jenkins.pullstack.cloud):"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "bg-slate-900 text-slate-100 p-3 rounded-lg font-mono text-xs overflow-x-auto"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", {
+    "class": "text-slate-100"
+  }, "server {\n    listen 80;\n    listen 443 ssl http2;\n    server_name jenkins.pullstack.cloud;\n\n    ssl_certificate     /www/server/panel/vhost/cert/jenkins.pullstack.cloud/fullchain.pem;\n    ssl_certificate_key /www/server/panel/vhost/cert/jenkins.pullstack.cloud/privkey.pem;\n\n    location / {\n        proxy_pass http://127.0.0.1:14808;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto https;\n    }\n\n    location ~ ^/ws/(.*) {\n        proxy_pass http://127.0.0.1:14808;\n        proxy_http_version 1.1;\n        proxy_set_header Upgrade $http_upgrade;\n        proxy_set_header Connection \"upgrade\";\n        proxy_set_header Host $host;\n    }\n}")])], -1 /* CACHED */))])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 6 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_59, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Globe"], {
     size: 28,
     "class": "text-blue-600"
-  }), _cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 6: DNS Records ", -1 /* CACHED */))]), _cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"overflow-x-auto\" data-v-40d676e1><table class=\"w-full text-sm\" data-v-40d676e1><thead data-v-40d676e1><tr class=\"border-b-2 border-slate-200\" data-v-40d676e1><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Type</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Name</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Value</th></tr></thead><tbody class=\"divide-y divide-slate-200\" data-v-40d676e1><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>app.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>grafana.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>jenkins.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>n8n.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr></tbody></table></div>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 7 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_51, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_53, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CheckCircle"], {
+  }), _cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 6: DNS Records ", -1 /* CACHED */))]), _cache[35] || (_cache[35] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"overflow-x-auto\" data-v-40d676e1><table class=\"w-full text-sm\" data-v-40d676e1><thead data-v-40d676e1><tr class=\"border-b-2 border-slate-200\" data-v-40d676e1><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Type</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Name</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Value</th></tr></thead><tbody class=\"divide-y divide-slate-200\" data-v-40d676e1><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>app.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>grafana.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>jenkins.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>n8n.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr></tbody></table></div>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 7 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_60, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_61, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_62, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CheckCircle"], {
     size: 28,
     "class": "text-green-600"
-  }), _cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 7: Finalization ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_54, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }), _cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 7: Finalization ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_63, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "nginx -t"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "service nginx reload"
@@ -30886,10 +30963,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     cmd: "php artisan optimize:clear"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "service php-fpm restart"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Access Summary "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_55, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Compass"], {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Access Summary "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_64, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_65, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_66, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Compass"], {
     size: 28,
     "class": "text-purple-600"
-  }), _cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Access Summary ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ServiceLink"], {
+  }), _cache[37] || (_cache[37] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Access Summary ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_67, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ServiceLink"], {
     title: "Laravel",
     url: "https://pullstack.cloud",
     desc: "Landing Page",
