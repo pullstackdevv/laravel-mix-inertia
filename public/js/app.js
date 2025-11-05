@@ -27743,7 +27743,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   VERSION: () => (/* binding */ VERSION)
 /* harmony export */ });
-const VERSION = "1.13.1";
+const VERSION = "1.13.2";
 
 /***/ }),
 
@@ -30308,6 +30308,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _inertiajs_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/vue3 */ "./node_modules/@inertiajs/vue3/dist/index.esm.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/activity.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/box.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/briefcase.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/compass.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/container.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/copy.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/database.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/external-link.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/git-branch.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/globe.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/monitor.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/package.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/palette.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/rocket.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/server.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/wrench.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/circle-check-big.js");
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -30331,11 +30352,23 @@ __webpack_require__.r(__webpack_exports__);
           copy: copy
         };
       },
-      template: "\n    <div class=\"p-3 rounded-lg bg-slate-900 text-slate-100 font-mono text-sm overflow-x-auto hover:bg-slate-800 transition cursor-pointer group\" @click=\"copy\">\n      <div class=\"flex justify-between items-start\">\n        <span class=\"flex-1\">{{ cmd }}</span>\n        <span class=\"text-slate-400 group-hover:text-slate-300 flex-shrink-0 ml-2\">\uD83D\uDCCB</span>\n      </div>\n      <div v-if=\"copied\" class=\"text-xs text-green-400 mt-1\">\u2713 Copied!</div>\n    </div>\n  "
+      template: "\n    <div class=\"p-3 rounded-lg bg-slate-900 text-slate-100 font-mono text-sm overflow-x-auto hover:bg-slate-800 transition cursor-pointer group\" @click=\"copy\">\n      <div class=\"flex justify-between items-start\">\n        <span class=\"flex-1\">{{ cmd }}</span>\n        <Copy :size=\"16\" class=\"text-slate-400 group-hover:text-slate-300 flex-shrink-0 ml-2\" />\n      </div>\n      <div v-if=\"copied\" class=\"text-xs text-green-400 mt-1 flex items-center gap-1\">\n        <CheckCircle :size=\"12\" /> Copied!\n      </div>\n    </div>\n  "
     };
     var ServiceLink = {
       props: ['title', 'url', 'desc', 'icon'],
-      template: "\n    <a :href=\"url\" target=\"_blank\" class=\"rounded-lg border border-slate-200 bg-white p-6 hover:border-blue-500 hover:shadow-md transition group\">\n      <div class=\"text-3xl mb-3 group-hover:scale-110 transition\">{{ icon }}</div>\n      <h3 class=\"font-semibold text-slate-900 mb-1\">{{ title }}</h3>\n      <p class=\"text-sm text-slate-600 mb-3\">{{ desc }}</p>\n      <div class=\"text-sm text-blue-600 font-medium\">{{ url }} \u2192</div>\n    </a>\n  "
+      template: "\n    <a :href=\"url\" target=\"_blank\" class=\"rounded-lg border border-slate-200 bg-white p-6 hover:border-blue-500 hover:shadow-md transition group\">\n      <div class=\"mb-4\">\n        <component :is=\"getIcon()\" :size=\"32\" class=\"text-blue-600 group-hover:scale-110 transition\" />\n      </div>\n      <h3 class=\"font-semibold text-slate-900 mb-1\">{{ title }}</h3>\n      <p class=\"text-sm text-slate-600 mb-3\">{{ desc }}</p>\n      <div class=\"text-sm text-blue-600 font-medium flex items-center gap-1\">{{ url }} <ExternalLink :size=\"14\" /></div>\n    </a>\n  ",
+      methods: {
+        getIcon: function getIcon() {
+          var icons = {
+            Laravel: lucide_vue_next__WEBPACK_IMPORTED_MODULE_16__["default"],
+            'Sales App': lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"],
+            Grafana: lucide_vue_next__WEBPACK_IMPORTED_MODULE_20__["default"],
+            Jenkins: lucide_vue_next__WEBPACK_IMPORTED_MODULE_18__["default"],
+            n8n: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+          };
+          return icons[this.title] || lucide_vue_next__WEBPACK_IMPORTED_MODULE_16__["default"];
+        }
+      }
     };
     var __returned__ = {
       CommandBox: CommandBox,
@@ -30343,6 +30376,66 @@ __webpack_require__.r(__webpack_exports__);
       ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
       get Link() {
         return _inertiajs_vue3__WEBPACK_IMPORTED_MODULE_1__.Link;
+      },
+      get BookOpen() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"];
+      },
+      get Rocket() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_16__["default"];
+      },
+      get Settings() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_18__["default"];
+      },
+      get Wrench() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_19__["default"];
+      },
+      get Palette() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_15__["default"];
+      },
+      get Briefcase() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"];
+      },
+      get Container() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__["default"];
+      },
+      get Globe() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_12__["default"];
+      },
+      get CheckCircle() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_21__["default"];
+      },
+      get Compass() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__["default"];
+      },
+      get Server() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_17__["default"];
+      },
+      get Database() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_9__["default"];
+      },
+      get Box() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"];
+      },
+      get Package() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_14__["default"];
+      },
+      get Monitor() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_13__["default"];
+      },
+      get Activity() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get GitBranch() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_11__["default"];
+      },
+      get BarChart3() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_20__["default"];
+      },
+      get Copy() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_8__["default"];
+      },
+      get ExternalLink() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_10__["default"];
       }
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
@@ -30368,6 +30461,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _inertiajs_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/vue3 */ "./node_modules/@inertiajs/vue3/dist/index.esm.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/briefcase.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/container.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/globe.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/lock.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/palette.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/rocket.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/wrench.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js");
+
 
 
 
@@ -30383,7 +30487,37 @@ __webpack_require__.r(__webpack_exports__);
       get Link() {
         return _inertiajs_vue3__WEBPACK_IMPORTED_MODULE_0__.Link;
       },
-      ref: vue__WEBPACK_IMPORTED_MODULE_1__.ref
+      ref: vue__WEBPACK_IMPORTED_MODULE_1__.ref,
+      get BookOpen() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get Rocket() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_8__["default"];
+      },
+      get Wrench() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_10__["default"];
+      },
+      get Palette() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__["default"];
+      },
+      get Container() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"];
+      },
+      get Lock() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__["default"];
+      },
+      get Globe() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"];
+      },
+      get Briefcase() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"];
+      },
+      get BarChart3() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_11__["default"];
+      },
+      get Settings() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_9__["default"];
+      }
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -30407,12 +30541,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 var _hoisted_1 = {
   "class": "min-h-screen bg-gradient-to-br from-slate-50 to-slate-100"
@@ -30427,76 +30555,166 @@ var _hoisted_4 = {
   "class": "flex items-center justify-between py-4"
 };
 var _hoisted_5 = {
-  "class": "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12"
+  "class": "flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-700"
 };
 var _hoisted_6 = {
-  "class": "grid grid-cols-1 lg:grid-cols-4 gap-8"
+  "class": "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12"
 };
 var _hoisted_7 = {
-  "class": "lg:col-span-3 space-y-8"
+  "class": "grid grid-cols-1 lg:grid-cols-4 gap-8"
 };
 var _hoisted_8 = {
-  id: "step1"
+  "class": "lg:col-span-3 space-y-8"
 };
 var _hoisted_9 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  id: "overview"
 };
 var _hoisted_10 = {
-  "class": "space-y-2"
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
 };
 var _hoisted_11 = {
-  id: "step3"
+  "class": "text-3xl font-bold text-slate-900 mb-4 flex items-center gap-3"
 };
 var _hoisted_12 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  id: "requirements"
 };
 var _hoisted_13 = {
-  "class": "space-y-2"
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
 };
 var _hoisted_14 = {
-  id: "step4"
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
 };
 var _hoisted_15 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  "class": "grid grid-cols-1 md:grid-cols-2 gap-4"
 };
 var _hoisted_16 = {
-  "class": "space-y-2"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 flex items-start gap-3"
 };
 var _hoisted_17 = {
-  id: "step5"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 flex items-start gap-3"
 };
 var _hoisted_18 = {
-  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 flex items-start gap-3"
 };
 var _hoisted_19 = {
-  "class": "space-y-6"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 flex items-start gap-3"
 };
 var _hoisted_20 = {
-  "class": "border-l-4 border-blue-500 pl-6 py-4"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 flex items-start gap-3"
 };
 var _hoisted_21 = {
-  "class": "border-l-4 border-orange-500 pl-6 py-4"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 flex items-start gap-3"
 };
 var _hoisted_22 = {
-  "class": "border-l-4 border-green-500 pl-6 py-4"
+  "class": "p-4 rounded-lg bg-slate-50 border border-slate-200 md:col-span-2 flex items-start gap-3"
 };
 var _hoisted_23 = {
-  id: "step7"
+  id: "step1"
 };
 var _hoisted_24 = {
   "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
 };
 var _hoisted_25 = {
-  "class": "space-y-2"
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
 };
 var _hoisted_26 = {
+  "class": "space-y-2"
+};
+var _hoisted_27 = {
+  id: "step2"
+};
+var _hoisted_28 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_29 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_30 = {
+  id: "step3"
+};
+var _hoisted_31 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_32 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_33 = {
+  "class": "space-y-2"
+};
+var _hoisted_34 = {
+  id: "step4"
+};
+var _hoisted_35 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_36 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_37 = {
+  "class": "space-y-2"
+};
+var _hoisted_38 = {
+  id: "step5"
+};
+var _hoisted_39 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_40 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_41 = {
+  "class": "space-y-6"
+};
+var _hoisted_42 = {
+  "class": "border-l-4 border-blue-500 pl-6 py-4"
+};
+var _hoisted_43 = {
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
+};
+var _hoisted_44 = {
+  "class": "border-l-4 border-orange-500 pl-6 py-4"
+};
+var _hoisted_45 = {
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
+};
+var _hoisted_46 = {
+  "class": "border-l-4 border-green-500 pl-6 py-4"
+};
+var _hoisted_47 = {
+  "class": "text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"
+};
+var _hoisted_48 = {
+  id: "step6"
+};
+var _hoisted_49 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_50 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_51 = {
+  id: "step7"
+};
+var _hoisted_52 = {
+  "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
+};
+var _hoisted_53 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_54 = {
+  "class": "space-y-2"
+};
+var _hoisted_55 = {
   id: "access",
   "class": "pb-12"
 };
-var _hoisted_27 = {
+var _hoisted_56 = {
   "class": "rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
 };
-var _hoisted_28 = {
+var _hoisted_57 = {
+  "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
+};
+var _hoisted_58 = {
   "class": "grid grid-cols-1 md:grid-cols-2 gap-4"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -30505,18 +30723,73 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "flex items-center gap-3 hover:opacity-80 transition"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _toConsumableArray(_cache[0] || (_cache[0] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-        "class": "flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-700"
-      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-        "class": "text-lg font-bold text-white"
-      }, "📚")], -1 /* CACHED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BookOpen"], {
+        size: 20,
+        "class": "text-white"
+      })]), _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
         "class": "text-2xl font-bold text-slate-900"
-      }, "VPS Deployment Docs", -1 /* CACHED */)]));
+      }, "VPS Deployment Docs", -1 /* CACHED */))];
     }),
     _: 1 /* STABLE */
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar Navigation "), _cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<aside class=\"lg:col-span-1\" data-v-40d676e1><div class=\"sticky top-24 space-y-2 bg-white rounded-lg p-4 border border-slate-200 shadow-sm\" data-v-40d676e1><h3 class=\"text-sm font-semibold text-slate-900 uppercase tracking-wide px-3 py-2\" data-v-40d676e1>Contents</h3><nav class=\"space-y-1\" data-v-40d676e1><a href=\"#overview\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Overview</a><a href=\"#requirements\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Requirements</a><a href=\"#step1\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 1: System</a><a href=\"#step2\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 2: aaPanel</a><a href=\"#step3\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 3: Laravel</a><a href=\"#step4\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 4: Sales App</a><a href=\"#step5\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 5: Docker</a><a href=\"#step6\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 6: DNS</a><a href=\"#step7\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 7: Final</a><a href=\"#access\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Access</a></nav></div></aside>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Overview "), _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"overview\" data-v-40d676e1><div class=\"rounded-xl border border-slate-200 bg-white p-8 shadow-sm\" data-v-40d676e1><h2 class=\"text-3xl font-bold text-slate-900 mb-4 flex items-center gap-3\" data-v-40d676e1><span data-v-40d676e1>🚀</span> VPS Deployment Setup </h2><p class=\"text-lg text-slate-600 leading-relaxed\" data-v-40d676e1> Dokumentasi lengkap untuk setup server <strong data-v-40d676e1>VPS Ubuntu 22.04</strong> menggunakan <strong data-v-40d676e1>aaPanel</strong> dengan deployment aplikasi berbasis <strong data-v-40d676e1>Laravel + React (Inertia)</strong>, serta beberapa service berbasis Docker: <strong data-v-40d676e1>Jenkins</strong>, <strong data-v-40d676e1>Grafana</strong>, dan <strong data-v-40d676e1>n8n</strong>. </p></div></section>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Requirements "), _cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"requirements\" data-v-40d676e1><div class=\"rounded-xl border border-slate-200 bg-white p-8 shadow-sm\" data-v-40d676e1><h2 class=\"text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3\" data-v-40d676e1><span data-v-40d676e1>⚙️</span> System Requirements </h2><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\" data-v-40d676e1><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>🖥️ OS</p><p class=\"text-slate-600\" data-v-40d676e1>Ubuntu 22.04 LTS</p></div><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>🎛️ Panel</p><p class=\"text-slate-600\" data-v-40d676e1>aaPanel (Free)</p></div><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>🌐 Web Server</p><p class=\"text-slate-600\" data-v-40d676e1>Nginx</p></div><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>💾 Database</p><p class=\"text-slate-600\" data-v-40d676e1>MariaDB</p></div><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>🐘 PHP</p><p class=\"text-slate-600\" data-v-40d676e1>8.3</p></div><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>📦 Node.js</p><p class=\"text-slate-600\" data-v-40d676e1>LTS</p></div><div class=\"p-4 rounded-lg bg-slate-50 border border-slate-200 md:col-span-2\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>🐳 Docker</p><p class=\"text-slate-600\" data-v-40d676e1>Docker &amp; Docker Compose (Latest)</p></div></div></div></section>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 1 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "🛠️"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 1: System Preparation ")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar Navigation "), _cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<aside class=\"lg:col-span-1\" data-v-40d676e1><div class=\"sticky top-24 space-y-2 bg-white rounded-lg p-4 border border-slate-200 shadow-sm\" data-v-40d676e1><h3 class=\"text-sm font-semibold text-slate-900 uppercase tracking-wide px-3 py-2\" data-v-40d676e1>Contents</h3><nav class=\"space-y-1\" data-v-40d676e1><a href=\"#overview\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Overview</a><a href=\"#requirements\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Requirements</a><a href=\"#step1\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 1: System</a><a href=\"#step2\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 2: aaPanel</a><a href=\"#step3\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 3: Laravel</a><a href=\"#step4\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 4: Sales App</a><a href=\"#step5\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 5: Docker</a><a href=\"#step6\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 6: DNS</a><a href=\"#step7\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Step 7: Final</a><a href=\"#access\" class=\"block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50 transition\" data-v-40d676e1>Access</a></nav></div></aside>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Overview "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Rocket"], {
+    size: 32,
+    "class": "text-blue-600"
+  }), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" VPS Deployment Setup ", -1 /* CACHED */))]), _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<p class=\"text-lg text-slate-600 leading-relaxed\" data-v-40d676e1> Dokumentasi lengkap untuk setup server <strong data-v-40d676e1>VPS Ubuntu 22.04</strong> menggunakan <strong data-v-40d676e1>aaPanel</strong> dengan deployment aplikasi berbasis <strong data-v-40d676e1>Laravel + React (Inertia)</strong>, serta beberapa service berbasis Docker: <strong data-v-40d676e1>Jenkins</strong>, <strong data-v-40d676e1>Grafana</strong>, dan <strong data-v-40d676e1>n8n</strong>. </p>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Requirements "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
+    size: 28,
+    "class": "text-slate-700"
+  }), _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" System Requirements ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Monitor"], {
+    size: 20,
+    "class": "text-blue-600 flex-shrink-0 mt-0.5"
+  }), _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "OS"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "Ubuntu 22.04 LTS")], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Server"], {
+    size: 20,
+    "class": "text-green-600 flex-shrink-0 mt-0.5"
+  }), _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "Panel"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "aaPanel (Free)")], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Globe"], {
+    size: 20,
+    "class": "text-purple-600 flex-shrink-0 mt-0.5"
+  }), _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "Web Server"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "Nginx")], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Database"], {
+    size: 20,
+    "class": "text-orange-600 flex-shrink-0 mt-0.5"
+  }), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "Database"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "MariaDB")], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Box"], {
+    size: 20,
+    "class": "text-indigo-600 flex-shrink-0 mt-0.5"
+  }), _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "PHP"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "8.3")], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Package"], {
+    size: 20,
+    "class": "text-green-600 flex-shrink-0 mt-0.5"
+  }), _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "Node.js"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "LTS")], -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Container"], {
+    size: 20,
+    "class": "text-cyan-600 flex-shrink-0 mt-0.5"
+  }), _cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-slate-900"
+  }, "Docker"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-600"
+  }, "Docker & Docker Compose (Latest)")], -1 /* CACHED */))])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 1 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Wrench"], {
+    size: 28,
+    "class": "text-blue-600"
+  }), _cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 1: System Preparation ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "apt update && apt upgrade -y"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "apt install -y git curl wget unzip zip htop vim net-tools"
@@ -30528,15 +30801,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     cmd: "apt install -y docker.io docker-compose"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "systemctl enable docker && systemctl start docker"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 2 "), _cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"step2\" data-v-40d676e1><div class=\"rounded-xl border border-slate-200 bg-white p-8 shadow-sm\" data-v-40d676e1><h2 class=\"text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3\" data-v-40d676e1><span data-v-40d676e1>🧰</span> Step 2: Setup aaPanel </h2><div class=\"space-y-4\" data-v-40d676e1><div class=\"p-4 rounded-lg bg-blue-50 border border-blue-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>Login URL:</p><p class=\"font-mono text-slate-700 mt-1\" data-v-40d676e1>http://IP-SERVER:7800</p></div><div data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>Install from App Store:</p><ul class=\"space-y-2 ml-4\" data-v-40d676e1><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> Nginx</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> PHP 8.3</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> MariaDB</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> phpMyAdmin</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> PureFTPd</li></ul></div><div data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-2\" data-v-40d676e1>Open Firewall Ports:</p><p class=\"font-mono text-slate-700 bg-slate-50 p-3 rounded\" data-v-40d676e1>80, 443, 22, 3306, 19066, 19067</p></div></div></div></section>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 3 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "🎨"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 3: Deploy Laravel + React ")], -1 /* CACHED */)), _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 2 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Server"], {
+    size: 28,
+    "class": "text-green-600"
+  }), _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 2: Setup aaPanel ", -1 /* CACHED */))]), _cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"space-y-4\" data-v-40d676e1><div class=\"p-4 rounded-lg bg-blue-50 border border-blue-200\" data-v-40d676e1><p class=\"font-semibold text-slate-900\" data-v-40d676e1>Login URL:</p><p class=\"font-mono text-slate-700 mt-1\" data-v-40d676e1>http://IP-SERVER:7800</p></div><div data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-3\" data-v-40d676e1>Install from App Store:</p><ul class=\"space-y-2 ml-4\" data-v-40d676e1><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> Nginx</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> PHP 8.3</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> MariaDB</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> phpMyAdmin</li><li class=\"flex items-center gap-2 text-slate-700\" data-v-40d676e1><span class=\"text-green-600\" data-v-40d676e1>✓</span> PureFTPd</li></ul></div><div data-v-40d676e1><p class=\"font-semibold text-slate-900 mb-2\" data-v-40d676e1>Open Firewall Ports:</p><p class=\"font-mono text-slate-700 bg-slate-50 p-3 rounded\" data-v-40d676e1>80, 443, 22, 3306, 19066, 19067</p></div></div>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 3 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Palette"], {
+    size: 28,
+    "class": "text-purple-600"
+  }), _cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 3: Deploy Laravel + React ", -1 /* CACHED */))]), _cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-sm font-semibold text-slate-600"
   }, "📁 Location:"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "font-mono text-slate-900 mt-1"
-  }, "/www/wwwroot/laravel-inertia")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }, "/www/wwwroot/laravel-inertia")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "cd /www/wwwroot/laravel-inertia"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "composer install"
@@ -30554,15 +30831,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     cmd: "chown -R www:www storage bootstrap/cache"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "chmod -R 775 storage bootstrap/cache"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 4 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [_cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "💼"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 4: Deploy Sales App ")], -1 /* CACHED */)), _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 4 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Briefcase"], {
+    size: 28,
+    "class": "text-indigo-600"
+  }), _cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 4: Deploy Sales App ", -1 /* CACHED */))]), _cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "mb-4 p-4 rounded-lg bg-slate-50 border border-slate-200"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-sm font-semibold text-slate-600"
   }, "📁 Location:"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "font-mono text-slate-900 mt-1"
-  }, "/www/wwwroot/sales-management-app")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  }, "/www/wwwroot/sales-management-app")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "cd /www/wwwroot/sales-management-app"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "composer install && npm install"
@@ -30570,29 +30848,37 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     cmd: "cp .env.example .env && php artisan key:generate"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "npm run build && php artisan migrate --seed"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 5 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "🐳"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 5: Docker Services ")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "text-lg font-bold text-slate-900 mb-3"
-  }, "🟦 Grafana (Port 3000)", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 5 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Container"], {
+    size: 28,
+    "class": "text-cyan-600"
+  }), _cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 5: Docker Services ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Activity"], {
+    size: 20,
+    "class": "text-blue-600"
+  }), _cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Grafana (Port 3000) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker run -d --name grafana -p 3000:3000 -v grafana-storage:/var/lib/grafana grafana/grafana:latest"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker update --restart always grafana"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "text-lg font-bold text-slate-900 mb-3"
-  }, "🟧 n8n (Port 5678)", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["GitBranch"], {
+    size: 20,
+    "class": "text-orange-600"
+  }), _cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" n8n (Port 5678) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker run -itd --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n -e WEBHOOK_URL=https://n8n.pullstack.cloud n8nio/n8n"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker update --restart always n8n"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "text-lg font-bold text-slate-900 mb-3"
-  }, "🟢 Jenkins (Port 8080)", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
+    size: 20,
+    "class": "text-green-600"
+  }), _cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Jenkins (Port 8080) ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "docker update --restart always jenkins"
-  })])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 6 "), _cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"step6\" data-v-40d676e1><div class=\"rounded-xl border border-slate-200 bg-white p-8 shadow-sm\" data-v-40d676e1><h2 class=\"text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3\" data-v-40d676e1><span data-v-40d676e1>🌐</span> Step 6: DNS Records </h2><div class=\"overflow-x-auto\" data-v-40d676e1><table class=\"w-full text-sm\" data-v-40d676e1><thead data-v-40d676e1><tr class=\"border-b-2 border-slate-200\" data-v-40d676e1><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Type</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Name</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Value</th></tr></thead><tbody class=\"divide-y divide-slate-200\" data-v-40d676e1><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>app.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>grafana.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>jenkins.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>n8n.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr></tbody></table></div></div></section>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 7 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [_cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "✅"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 7: Finalization ")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
+  })])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 6 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Globe"], {
+    size: 28,
+    "class": "text-blue-600"
+  }), _cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 6: DNS Records ", -1 /* CACHED */))]), _cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"overflow-x-auto\" data-v-40d676e1><table class=\"w-full text-sm\" data-v-40d676e1><thead data-v-40d676e1><tr class=\"border-b-2 border-slate-200\" data-v-40d676e1><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Type</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Name</th><th class=\"text-left py-3 px-4 font-semibold text-slate-900\" data-v-40d676e1>Value</th></tr></thead><tbody class=\"divide-y divide-slate-200\" data-v-40d676e1><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>app.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>grafana.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>jenkins.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr><tr data-v-40d676e1><td class=\"py-3 px-4\" data-v-40d676e1>A</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>n8n.pullstack.cloud</td><td class=\"py-3 px-4 font-mono\" data-v-40d676e1>31.97.188.192</td></tr></tbody></table></div>", 1))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Step 7 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_51, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_53, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CheckCircle"], {
+    size: 28,
+    "class": "text-green-600"
+  }), _cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Step 7: Finalization ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_54, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "nginx -t"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "service nginx reload"
@@ -30600,9 +30886,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     cmd: "php artisan optimize:clear"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CommandBox"], {
     cmd: "service php-fpm restart"
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Access Summary "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "🧭"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Access Summary ")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ServiceLink"], {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Access Summary "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_55, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Compass"], {
+    size: 28,
+    "class": "text-purple-600"
+  }), _cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Access Summary ", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ServiceLink"], {
     title: "Laravel",
     url: "https://pullstack.cloud",
     desc: "Landing Page",
@@ -30664,32 +30951,110 @@ var _hoisted_4 = {
   "class": "flex items-center justify-between h-16"
 };
 var _hoisted_5 = {
-  "class": "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20"
+  "class": "flex items-center gap-3"
 };
 var _hoisted_6 = {
-  "class": "text-center mb-16"
+  "class": "flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-700"
 };
 var _hoisted_7 = {
+  "class": "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20"
+};
+var _hoisted_8 = {
+  "class": "text-center mb-16"
+};
+var _hoisted_9 = {
+  "class": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
+};
+var _hoisted_10 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition"
+};
+var _hoisted_11 = {
+  "class": "mb-4 text-blue-400"
+};
+var _hoisted_12 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition"
+};
+var _hoisted_13 = {
+  "class": "mb-4 text-green-400"
+};
+var _hoisted_14 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition"
+};
+var _hoisted_15 = {
+  "class": "mb-4 text-purple-400"
+};
+var _hoisted_16 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition"
+};
+var _hoisted_17 = {
+  "class": "mb-4 text-cyan-400"
+};
+var _hoisted_18 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition"
+};
+var _hoisted_19 = {
+  "class": "mb-4 text-red-400"
+};
+var _hoisted_20 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition"
+};
+var _hoisted_21 = {
+  "class": "mb-4 text-yellow-400"
+};
+var _hoisted_22 = {
+  "class": "rounded-xl border border-slate-700 bg-slate-800/50 p-8 mb-16"
+};
+var _hoisted_23 = {
+  "class": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"
+};
+var _hoisted_24 = {
+  "class": "text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition"
+};
+var _hoisted_25 = {
+  "class": "flex justify-center mb-2 text-blue-400"
+};
+var _hoisted_26 = {
+  "class": "text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition"
+};
+var _hoisted_27 = {
+  "class": "flex justify-center mb-2 text-green-400"
+};
+var _hoisted_28 = {
+  "class": "text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition"
+};
+var _hoisted_29 = {
+  "class": "flex justify-center mb-2 text-purple-400"
+};
+var _hoisted_30 = {
+  "class": "text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition"
+};
+var _hoisted_31 = {
+  "class": "flex justify-center mb-2 text-orange-400"
+};
+var _hoisted_32 = {
+  "class": "text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition"
+};
+var _hoisted_33 = {
+  "class": "flex justify-center mb-2 text-cyan-400"
+};
+var _hoisted_34 = {
   "class": "text-center"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Navigation "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "flex items-center gap-3"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-700"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-    "class": "text-lg font-bold text-white"
-  }, "📚")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Navigation "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BookOpen"], {
+    size: 20,
+    "class": "text-white"
+  })]), _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
     "class": "text-xl font-bold text-white"
-  }, "VPS Deployment Docs")], -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+  }, "VPS Deployment Docs", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
     href: "/docs",
     "class": "px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _toConsumableArray(_cache[0] || (_cache[0] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" View Documentation → ", -1 /* CACHED */)]));
+      return _toConsumableArray(_cache[1] || (_cache[1] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" View Documentation → ", -1 /* CACHED */)]));
     }),
     _: 1 /* STABLE */
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Hero Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Hero Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
     "class": "text-5xl md:text-6xl font-bold text-white mb-6"
   }, " VPS Deployment Setup ", -1 /* CACHED */)), _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-xl text-slate-300 mb-8 max-w-2xl mx-auto"
@@ -30701,14 +31066,82 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return _toConsumableArray(_cache[2] || (_cache[2] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" 📖 Baca Dokumentasi Lengkap ", -1 /* CACHED */)]));
     }),
     _: 1 /* STABLE */
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Grid "), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16\"><div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition\"><div class=\"text-4xl mb-4\">🚀</div><h3 class=\"text-xl font-bold text-white mb-2\">System Preparation</h3><p class=\"text-slate-400\">Setup lengkap Ubuntu 22.04, Node.js, Docker, dan dependencies</p></div><div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition\"><div class=\"text-4xl mb-4\">🧰</div><h3 class=\"text-xl font-bold text-white mb-2\">aaPanel Setup</h3><p class=\"text-slate-400\">Konfigurasi panel kontrol gratis dengan Nginx, PHP 8.3, MariaDB</p></div><div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition\"><div class=\"text-4xl mb-4\">🎨</div><h3 class=\"text-xl font-bold text-white mb-2\">Laravel + React</h3><p class=\"text-slate-400\">Deploy aplikasi modern dengan Inertia.js dan React</p></div><div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition\"><div class=\"text-4xl mb-4\">🐳</div><h3 class=\"text-xl font-bold text-white mb-2\">Docker Services</h3><p class=\"text-slate-400\">Setup Grafana, Jenkins, dan n8n dalam container</p></div><div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition\"><div class=\"text-4xl mb-4\">🔒</div><h3 class=\"text-xl font-bold text-white mb-2\">SSL &amp; Security</h3><p class=\"text-slate-400\">Konfigurasi SSL, reverse proxy Nginx, dan firewall</p></div><div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 hover:border-blue-500 transition\"><div class=\"text-4xl mb-4\">🌐</div><h3 class=\"text-xl font-bold text-white mb-2\">DNS &amp; Domains</h3><p class=\"text-slate-400\">Setup DNS records dan multiple subdomains</p></div></div>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Services Overview "), _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"rounded-xl border border-slate-700 bg-slate-800/50 p-8 mb-16\"><h2 class=\"text-3xl font-bold text-white mb-8\">Services yang Akan Di-Deploy</h2><div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4\"><div class=\"text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition\"><div class=\"text-3xl mb-2\">🚀</div><p class=\"font-semibold text-white\">Laravel</p><p class=\"text-sm text-slate-400 mt-1\">pullstack.cloud</p></div><div class=\"text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition\"><div class=\"text-3xl mb-2\">💼</div><p class=\"font-semibold text-white\">Sales App</p><p class=\"text-sm text-slate-400 mt-1\">app.pullstack.cloud</p></div><div class=\"text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition\"><div class=\"text-3xl mb-2\">📊</div><p class=\"font-semibold text-white\">Grafana</p><p class=\"text-sm text-slate-400 mt-1\">grafana.pullstack.cloud</p></div><div class=\"text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition\"><div class=\"text-3xl mb-2\">🔧</div><p class=\"font-semibold text-white\">Jenkins</p><p class=\"text-sm text-slate-400 mt-1\">jenkins.pullstack.cloud</p></div><div class=\"text-center p-4 rounded-lg bg-slate-700/50 hover:bg-slate-700 transition\"><div class=\"text-3xl mb-2\">⚙️</div><p class=\"font-semibold text-white\">n8n</p><p class=\"text-sm text-slate-400 mt-1\">n8n.pullstack.cloud</p></div></div></div>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" CTA Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Grid "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Rocket"], {
+    size: 40
+  })]), _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "text-xl font-bold text-white mb-2"
+  }, "System Preparation", -1 /* CACHED */)), _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-400"
+  }, "Setup lengkap Ubuntu 22.04, Node.js, Docker, dan dependencies", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Wrench"], {
+    size: 40
+  })]), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "text-xl font-bold text-white mb-2"
+  }, "aaPanel Setup", -1 /* CACHED */)), _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-400"
+  }, "Konfigurasi panel kontrol gratis dengan Nginx, PHP 8.3, MariaDB", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Palette"], {
+    size: 40
+  })]), _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "text-xl font-bold text-white mb-2"
+  }, "Laravel + React", -1 /* CACHED */)), _cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-400"
+  }, "Deploy aplikasi modern dengan Inertia.js dan React", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Container"], {
+    size: 40
+  })]), _cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "text-xl font-bold text-white mb-2"
+  }, "Docker Services", -1 /* CACHED */)), _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-400"
+  }, "Setup Grafana, Jenkins, dan n8n dalam container", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Lock"], {
+    size: 40
+  })]), _cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "text-xl font-bold text-white mb-2"
+  }, "SSL & Security", -1 /* CACHED */)), _cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-400"
+  }, "Konfigurasi SSL, reverse proxy Nginx, dan firewall", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Globe"], {
+    size: 40
+  })]), _cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "text-xl font-bold text-white mb-2"
+  }, "DNS & Domains", -1 /* CACHED */)), _cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-slate-400"
+  }, "Setup DNS records dan multiple subdomains", -1 /* CACHED */))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Services Overview "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [_cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+    "class": "text-3xl font-bold text-white mb-8"
+  }, "Services yang Akan Di-Deploy", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Rocket"], {
+    size: 32
+  })]), _cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-white"
+  }, "Laravel", -1 /* CACHED */)), _cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm text-slate-400 mt-1"
+  }, "pullstack.cloud", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Briefcase"], {
+    size: 32
+  })]), _cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-white"
+  }, "Sales App", -1 /* CACHED */)), _cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm text-slate-400 mt-1"
+  }, "app.pullstack.cloud", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BarChart3"], {
+    size: 32
+  })]), _cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-white"
+  }, "Grafana", -1 /* CACHED */)), _cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm text-slate-400 mt-1"
+  }, "grafana.pullstack.cloud", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
+    size: 32
+  })]), _cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-white"
+  }, "Jenkins", -1 /* CACHED */)), _cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm text-slate-400 mt-1"
+  }, "jenkins.pullstack.cloud", -1 /* CACHED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Settings"], {
+    size: 32
+  })]), _cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "font-semibold text-white"
+  }, "n8n", -1 /* CACHED */)), _cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-sm text-slate-400 mt-1"
+  }, "n8n.pullstack.cloud", -1 /* CACHED */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" CTA Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [_cache[29] || (_cache[29] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-slate-400 mb-6"
   }, "Siap untuk setup VPS Anda?", -1 /* CACHED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
     href: "/docs",
     "class": "inline-block px-8 py-4 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold transition transform hover:scale-105"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _toConsumableArray(_cache[5] || (_cache[5] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Mulai Baca Dokumentasi → ", -1 /* CACHED */)]));
+      return _toConsumableArray(_cache[28] || (_cache[28] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Mulai Baca Dokumentasi → ", -1 /* CACHED */)]));
     }),
     _: 1 /* STABLE */
   })])])]);
@@ -40087,6 +40520,911 @@ function toString(value) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toString);
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/Icon.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/Icon.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Icon)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/src/utils.js */ "./node_modules/lucide-vue-next/dist/esm/shared/src/utils.js");
+/* harmony import */ var _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultAttributes.js */ "./node_modules/lucide-vue-next/dist/esm/defaultAttributes.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+const Icon = ({ size, strokeWidth = 2, absoluteStrokeWidth, color, iconNode, name, class: classes, ...props }, { slots }) => {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(
+    "svg",
+    {
+      ..._defaultAttributes_js__WEBPACK_IMPORTED_MODULE_2__["default"],
+      width: size || _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_2__["default"].width,
+      height: size || _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_2__["default"].height,
+      stroke: color || _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_2__["default"].stroke,
+      "stroke-width": absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+      class: ["lucide", `lucide-${(0,_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__.toKebabCase)(name ?? "icon")}`],
+      ...props
+    },
+    [...iconNode.map((child) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(...child)), ...slots.default ? [slots.default()] : []]
+  );
+};
+
+
+//# sourceMappingURL=Icon.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createLucideIcon)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _Icon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Icon.js */ "./node_modules/lucide-vue-next/dist/esm/Icon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+const createLucideIcon = (iconName, iconNode) => (props, { slots }) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(
+  _Icon_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  {
+    ...props,
+    iconNode,
+    name: iconName
+  },
+  slots
+);
+
+
+//# sourceMappingURL=createLucideIcon.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/defaultAttributes.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/defaultAttributes.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ defaultAttributes)
+/* harmony export */ });
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-width": 2,
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round"
+};
+
+
+//# sourceMappingURL=defaultAttributes.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/activity.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/activity.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Activity)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Activity = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ActivityIcon", [
+  [
+    "path",
+    {
+      d: "M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2",
+      key: "169zse"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=activity.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/book-open.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/book-open.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BookOpen)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const BookOpen = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("BookOpenIcon", [
+  ["path", { d: "M12 7v14", key: "1akyts" }],
+  [
+    "path",
+    {
+      d: "M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z",
+      key: "ruj8y"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=book-open.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/box.js":
+/*!************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/box.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Box)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Box = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("BoxIcon", [
+  [
+    "path",
+    {
+      d: "M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z",
+      key: "hh9hay"
+    }
+  ],
+  ["path", { d: "m3.3 7 8.7 5 8.7-5", key: "g66t2b" }],
+  ["path", { d: "M12 22V12", key: "d0xqtd" }]
+]);
+
+
+//# sourceMappingURL=box.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/briefcase.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/briefcase.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Briefcase)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Briefcase = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("BriefcaseIcon", [
+  ["path", { d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16", key: "jecpp" }],
+  ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2", key: "i6l2r4" }]
+]);
+
+
+//# sourceMappingURL=briefcase.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChartColumn)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const ChartColumn = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ChartColumnIcon", [
+  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
+  ["path", { d: "M18 17V9", key: "2bz60n" }],
+  ["path", { d: "M13 17V5", key: "1frdt8" }],
+  ["path", { d: "M8 17v-3", key: "17ska0" }]
+]);
+
+
+//# sourceMappingURL=chart-column.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/circle-check-big.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/circle-check-big.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CircleCheckBig)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const CircleCheckBig = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CircleCheckBigIcon", [
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+]);
+
+
+//# sourceMappingURL=circle-check-big.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/compass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/compass.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Compass)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Compass = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CompassIcon", [
+  [
+    "path",
+    {
+      d: "m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z",
+      key: "9ktpf1"
+    }
+  ],
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }]
+]);
+
+
+//# sourceMappingURL=compass.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/container.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/container.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Container)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Container = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ContainerIcon", [
+  [
+    "path",
+    {
+      d: "M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z",
+      key: "1t2lqe"
+    }
+  ],
+  ["path", { d: "M10 21.9V14L2.1 9.1", key: "o7czzq" }],
+  ["path", { d: "m10 14 11.9-6.9", key: "zm5e20" }],
+  ["path", { d: "M14 19.8v-8.1", key: "159ecu" }],
+  ["path", { d: "M18 17.5V9.4", key: "11uown" }]
+]);
+
+
+//# sourceMappingURL=container.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/copy.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/copy.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Copy)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Copy = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CopyIcon", [
+  ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
+  ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
+]);
+
+
+//# sourceMappingURL=copy.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/database.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/database.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Database)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Database = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("DatabaseIcon", [
+  ["ellipse", { cx: "12", cy: "5", rx: "9", ry: "3", key: "msslwz" }],
+  ["path", { d: "M3 5V19A9 3 0 0 0 21 19V5", key: "1wlel7" }],
+  ["path", { d: "M3 12A9 3 0 0 0 21 12", key: "mv7ke4" }]
+]);
+
+
+//# sourceMappingURL=database.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/external-link.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/external-link.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ExternalLink)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const ExternalLink = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ExternalLinkIcon", [
+  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
+  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
+  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
+]);
+
+
+//# sourceMappingURL=external-link.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/git-branch.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/git-branch.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GitBranch)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const GitBranch = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("GitBranchIcon", [
+  ["line", { x1: "6", x2: "6", y1: "3", y2: "15", key: "17qcm7" }],
+  ["circle", { cx: "18", cy: "6", r: "3", key: "1h7g24" }],
+  ["circle", { cx: "6", cy: "18", r: "3", key: "fqmcym" }],
+  ["path", { d: "M18 9a9 9 0 0 1-9 9", key: "n2h4wq" }]
+]);
+
+
+//# sourceMappingURL=git-branch.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/globe.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/globe.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Globe)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Globe = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("GlobeIcon", [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
+  ["path", { d: "M2 12h20", key: "9i4pu4" }]
+]);
+
+
+//# sourceMappingURL=globe.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/lock.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/lock.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Lock)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Lock = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("LockIcon", [
+  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
+  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
+]);
+
+
+//# sourceMappingURL=lock.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/monitor.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/monitor.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Monitor)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Monitor = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("MonitorIcon", [
+  ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
+  ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
+  ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
+]);
+
+
+//# sourceMappingURL=monitor.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/package.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/package.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Package)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Package = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("PackageIcon", [
+  ["path", { d: "m7.5 4.27 9 5.15", key: "1c824w" }],
+  [
+    "path",
+    {
+      d: "M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z",
+      key: "hh9hay"
+    }
+  ],
+  ["path", { d: "m3.3 7 8.7 5 8.7-5", key: "g66t2b" }],
+  ["path", { d: "M12 22V12", key: "d0xqtd" }]
+]);
+
+
+//# sourceMappingURL=package.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/palette.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/palette.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Palette)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Palette = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("PaletteIcon", [
+  ["circle", { cx: "13.5", cy: "6.5", r: ".5", fill: "currentColor", key: "1okk4w" }],
+  ["circle", { cx: "17.5", cy: "10.5", r: ".5", fill: "currentColor", key: "f64h9f" }],
+  ["circle", { cx: "8.5", cy: "7.5", r: ".5", fill: "currentColor", key: "fotxhn" }],
+  ["circle", { cx: "6.5", cy: "12.5", r: ".5", fill: "currentColor", key: "qy21gx" }],
+  [
+    "path",
+    {
+      d: "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z",
+      key: "12rzf8"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=palette.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/rocket.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/rocket.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Rocket)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Rocket = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("RocketIcon", [
+  [
+    "path",
+    {
+      d: "M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z",
+      key: "m3kijz"
+    }
+  ],
+  [
+    "path",
+    {
+      d: "m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z",
+      key: "1fmvmk"
+    }
+  ],
+  ["path", { d: "M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0", key: "1f8sc4" }],
+  ["path", { d: "M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5", key: "qeys4" }]
+]);
+
+
+//# sourceMappingURL=rocket.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/server.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/server.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Server)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Server = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ServerIcon", [
+  ["rect", { width: "20", height: "8", x: "2", y: "2", rx: "2", ry: "2", key: "ngkwjq" }],
+  ["rect", { width: "20", height: "8", x: "2", y: "14", rx: "2", ry: "2", key: "iecqi9" }],
+  ["line", { x1: "6", x2: "6.01", y1: "6", y2: "6", key: "16zg32" }],
+  ["line", { x1: "6", x2: "6.01", y1: "18", y2: "18", key: "nzw8ys" }]
+]);
+
+
+//# sourceMappingURL=server.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/settings.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/settings.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Settings)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Settings = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("SettingsIcon", [
+  [
+    "path",
+    {
+      d: "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z",
+      key: "1qme2f"
+    }
+  ],
+  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+]);
+
+
+//# sourceMappingURL=settings.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/wrench.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/wrench.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Wrench)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Wrench = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("WrenchIcon", [
+  [
+    "path",
+    {
+      d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",
+      key: "cbrjhi"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=wrench.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/shared/src/utils.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/shared/src/utils.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   toKebabCase: () => (/* binding */ toKebabCase)
+/* harmony export */ });
+/**
+ * @license lucide-vue-next v0.447.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+const toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+
+
+//# sourceMappingURL=utils.js.map
 
 
 /***/ }),
